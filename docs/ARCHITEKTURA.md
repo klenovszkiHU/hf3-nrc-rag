@@ -87,3 +87,15 @@ vagy hosszabb távon az oldalak crawlolhatóvá tétele (robots.txt módosítás
 **Embedding konzisztencia:** Ha modellt váltunk (pl. text-embedding-3-small →
 text-embedding-3-large), a teljes tudásbázist újra kell vektorizálni, mert
 a különböző modellek vekterei nem kompatibilisek egymással.
+
+---
+
+## Golden set eredmények értelmezése
+
+**Raw pipeline (csak embedding + cosine similarity): 5/6 helyes**
+A Q6 kérdésnél ("Mi az NRC konkrét árazása?") a nyers keresés azt mondta, van válasz — holott nincs. Ez a grounding hiányát mutatja: a vektorkeresés talált hasonló szövegrészletet (Netpanel leírást), de az nem tartalmaz árazást.
+
+**Teljes pipeline (HyDE + rerank + grounding): 6/6 helyes**
+A Q6-nál a reranking után a generator helyesen állapította meg, hogy a visszahozott chunkokban nincs árainformáció, és kimondta: "A rendelkezésre álló tudásbázisban nincs elegendő információ erről." Ez a grounding működésének bizonyítéka — a rendszer nem talál ki tartalmat.
+
+**Következtetés:** A HyDE + rerank kombináció nemcsak jobb sorrendet ad, hanem megakadályozza a hamis pozitív válaszokat is, ami ajánlatírás kontextusban kritikus (NRC nem adhat hamis árakat vagy nem létező szolgáltatásokat).
