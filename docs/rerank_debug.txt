@@ -1,0 +1,38 @@
+sagemaker.config INFO - Not applying SDK defaults from location: /Library/Application Support/sagemaker/config.yaml
+sagemaker.config INFO - Not applying SDK defaults from location: /Users/Kleno_1/Library/Application Support/sagemaker/config.yaml
+/Users/Kleno_1/anaconda3/envs/hf3-nrc-rag/lib/python3.11/site-packages/sagemaker/__init__.py:86: SageMakerV2DeprecationWarning: You are using the SageMaker Python SDK v2, which is on path of deprecation. v3 is the actively developed major version.
+See https://github.com/aws/sagemaker-python-sdk/blob/master/migration.md for the migration guide. Set SAGEMAKER_SUPPRESS_V2_WARNING=1 to silence this warning.
+  warn_v2_deprecation()
+You are using the SageMaker Python SDK v2, which is on path of deprecation. v3 is the actively developed major version.
+See https://github.com/aws/sagemaker-python-sdk/blob/master/migration.md for the migration guide. Set SAGEMAKER_SUPPRESS_V2_WARNING=1 to silence this warning.
+
+HyDE hipotézis:
+Az omnibusz kutatás egy közös adatgyűjtési platform, amelyen több, egymástól független megbízó is feltehet 
+kérdéseket ugyanabban a kérdőívben, így jelentősen csökkentve az egyedi ad hoc kutatások költségeit. Elsősorban 
+akkor érdemes választani, amikor a kutatási igény viszonylag egyszerű, néhány kérdésre korlátozódik, és nem 
+szükséges speciális mintavételezés vagy mélyebb elemzés, illetve amikor több cég hasonló célcsoportot szeretne 
+vizsgálni. Az omnibusz kutatás azonban kevésbé alkalmas összetett, markasánsított kérdésekre, hosszabb kérdőívekre 
+vagy olyan esetekre, ahol az adott témára teljes fókusz szükséges – ezekben az esetekben az ad hoc kutatás jobb 
+választás.
+
+Embedding dim: 1536
+
+Raw retrieval (20 chunk):
+  1. [0.653] Tudd meg, amit szeretnél a Z-generációról!
+  2. [0.643] Élet infografikával vagy anélkül? Adatokkal tedd ütőssé üzen
+  3. [0.609] 15 tipp, amivel javíthatod az online kutatásod minőségét
+  4. [0.606] Databus: Omnibusz kutatás a Netpanelen
+  5. [0.603] Zenehallgatás infografika (2)
+
+Rerank után (top-5):
+  1.  Zenehallgatás infografika (2)
+  2.  Digitális Életstílus Szegmentáció
+  3.  Tetoválás infografika
+  4.  Databus Omnibusz bemutató letöltése
+  5.  Z-Zone Omnibusz
+---VALASZ---
+## Az omnibusz kutatás és alkalmazási területei
+
+### Mi az omnibusz kutatás?
+
+Az omnibusz egy megosztott költségű, rendszeresen ismétlődő kérdőíves felmérési forma. A felmérések **kb. 10 naponta indulnak** a Netpanelen — Magyarország legnagyobb válaszadói létszámú online paneljén. A minta **1000 fős

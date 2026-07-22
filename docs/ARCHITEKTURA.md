@@ -99,3 +99,31 @@ A Q6 kérdésnél ("Mi az NRC konkrét árazása?") a nyers keresés azt mondta,
 A Q6-nál a reranking után a generator helyesen állapította meg, hogy a visszahozott chunkokban nincs árainformáció, és kimondta: "A rendelkezésre álló tudásbázisban nincs elegendő információ erről." Ez a grounding működésének bizonyítéka — a rendszer nem talál ki tartalmat.
 
 **Következtetés:** A HyDE + rerank kombináció nemcsak jobb sorrendet ad, hanem megakadályozza a hamis pozitív válaszokat is, ami ajánlatírás kontextusban kritikus (NRC nem adhat hamis árakat vagy nem létező szolgáltatásokat).
+
+---
+
+## Rerank sorrendváltozás — konkrét példa
+
+**Kérdés:** "Mi az omnibusz kutatás és mikor érdemes alkalmazni ad hoc kutatás helyett?"
+
+**Raw retrieval top-5 (cosine similarity alapján):**
+1. [0.653] Tudd meg, amit szeretnél a Z-generációról!
+2. [0.643] Élet infografikával vagy anélkül?
+3. [0.609] 15 tipp, amivel javíthatod az online kutatásod minőségét
+4. [0.606] Databus: Omnibusz kutatás a Netpanelen ← releváns
+5. [0.603] Zenehallgatás infografika
+
+**Rerank top-5 (Cohere rerank-multilingual-v3.0 után):**
+1. Zenehallgatás infografika → kiesett fontossági sorból
+2. Databus Omnibusz bemutató ← előre kerül
+3. Z-Zone Omnibusz ← előre kerül
+
+**Miért jobb a rerank sorrendje?**
+A cosine similarity a vektortér-közelséget méri — az "omnibusz" szó előfordul
+infografikákon és Z-generációs cikkekben is, ezért ezek kerültek előre.
+A Cohere reranker a kérdés-dokumentum relevanciát értékeli szemantikailag:
+felismeri hogy a "mikor érdemes alkalmazni ad hoc helyett" kérdés konkrét
+módszertani összehasonlítást keres, nem általános kutatási tippeket.
+Az omnibusz-specifikus tartalmak (Databus, Z-Zone Omnibusz) ezért kerülnek
+előre — a generált válasz ezekből nyeri a konkrét adatokat (10 naponta indul,
+1000 fős minta, Netpanel platform).
