@@ -1,0 +1,17 @@
+# Secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Adatok (ne kerüljön a repóba)
+data/raw/
+data/chunks/
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,76 @@
+sagemaker.config INFO - Not applying SDK defaults from location: /Library/Application Support/sagemaker/config.yaml
+sagemaker.config INFO - Not applying SDK defaults from location: /Users/Kleno_1/Library/Application Support/sagemaker/config.yaml
+/Users/Kleno_1/anaconda3/envs/hf3-nrc-rag/lib/python3.11/site-packages/sagemaker/__init__.py:86: SageMakerV2DeprecationWarning: You are using the SageMaker Python SDK v2, which is on path of deprecation. v3 is the actively developed major version.
+See https://github.com/aws/sagemaker-python-sdk/blob/master/migration.md for the migration guide. Set SAGEMAKER_SUPPRESS_V2_WARNING=1 to silence this warning.
+  warn_v2_deprecation()
+You are using the SageMaker Python SDK v2, which is on path of deprecation. v3 is the actively developed major version.
+See https://github.com/aws/sagemaker-python-sdk/blob/master/migration.md for the migration guide. Set SAGEMAKER_SUPPRESS_V2_WARNING=1 to silence this warning.
+
+RAW RETRIEVAL futtatása...
+
+Q1: Milyen módszertannal mérhető a márkaismertség és a márkakép?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: NRC Brand Health
+
+Q2: Mi az omnibusz kutatás és mikor érdemes alkalmazni ad hoc kutatás helyett?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: Élet infografikával vagy anélkül? Adatokkal tedd ütőssé üzen
+
+Q3: Hogyan zajlik a Netpanel online panel mintavétele és hogyan biztosítják a representativitást?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: 15 tipp, amivel javíthatod az online kutatásod minőségét
+
+Q4: Milyen kvalitatív kutatási módszereket kínál az NRC és mikor melyiket érdemes választani?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: Ellenőrzőlista az optimális online kvalitatív módszer megvál
+
+Q5: Mi az Online Bulletin Board (OBB) módszer és miben különbözik a hagyományos fókuszcsoporttól?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: OBB, avagy hogyan kutasd meg témádat Online Bulletin Board m
+
+Q6: Mi az NRC konkrét árazása egy 1000 fős kvantitatív kutatáshoz?
+  → FAIL | has_answer=True (elvárt: False)
+  → Forrás: Netpanel, a piackutatási panel: a valódi válaszadók közösség
+
+TELJES PIPELINE futtatása...
+
+Q1: Milyen módszertannal mérhető a márkaismertség és a márkakép?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: Ingyenesen letölthető infografikák
+
+Q2: Mi az omnibusz kutatás és mikor érdemes alkalmazni ad hoc kutatás helyett?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: Z-Zone Omnibusz
+
+Q3: Hogyan zajlik a Netpanel online panel mintavétele és hogyan biztosítják a representativitást?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: Az online adatfelvétel 7 lépése
+
+Q4: Milyen kvalitatív kutatási módszereket kínál az NRC és mikor melyiket érdemes választani?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: Innovatív és költséghatékony online kvalitatív kutatás az NR
+
+Q5: Mi az Online Bulletin Board (OBB) módszer és miben különbözik a hagyományos fókuszcsoporttól?
+  → PASS | has_answer=True (elvárt: True)
+  → Forrás: OBB, avagy hogyan kutasd meg témádat Online Bulletin Board m
+
+Q6: Mi az NRC konkrét árazása egy 1000 fős kvantitatív kutatáshoz?
+  → PASS | has_answer=False (elvárt: False)
+  → Forrás: Ingyenesen letölthető infografikák
+                                       Raw vs Full Pipeline összehasonlítás                                        
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━┓
+┃ Q# ┃ Kérdés (rövidítve)          ┃ Raw forrás                  ┃ Full forrás                 ┃ Raw OK ┃ Full OK ┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━┩
+│ 1  │ Milyen módszertannal        │ NRC Brand Health            │ Ingyenesen letölthető       │   ✓    │    ✓    │
+│    │ mérhető a má…               │                             │ infogr                      │        │         │
+│ 2  │ Mi az omnibusz kutatás és   │ Élet infografikával vagy    │ Z-Zone Omnibusz             │   ✓    │    ✓    │
+│    │ mikor é…                    │ ané                         │                             │        │         │
+│ 3  │ Hogyan zajlik a Netpanel    │ 15 tipp, amivel javíthatod  │ Az online adatfelvétel 7    │   ✓    │    ✓    │
+│    │ online p…                   │ a                           │ lép                         │        │         │
+│ 4  │ Milyen kvalitatív kutatási  │ Ellenőrzőlista az optimális │ Innovatív és                │   ✓    │    ✓    │
+│    │ módsze…                     │                             │ költséghatékony             │        │         │
+│ 5  │ Mi az Online Bulletin Board │ OBB, avagy hogyan kutasd    │ OBB, avagy hogyan kutasd    │   ✓    │    ✓    │
+│    │ (OBB)…                      │ meg                         │ meg                         │        │         │
+│ 6  │ Mi az NRC konkrét árazása   │ Netpanel, a piackutatási    │ Ingyenesen letölthető       │   ✗    │    ✓    │
+│    │ egy 100…                    │ pan                         │ infogr                      │        │         │
+└────┴─────────────────────────────┴─────────────────────────────┴─────────────────────────────┴────────┴─────────┘
