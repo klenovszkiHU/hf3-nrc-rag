@@ -52,7 +52,7 @@ GOLDEN_QUESTIONS = [
     },
     {
         "id": 6,
-        "question": "Mi az NRC konkrét árazása egy 1000 fős kvantitatív kutatáshoz?",
+        "question": "Hány alkalmazottja van az NRC-nek és ki a HR vezetője?",
         "expected_keywords": [],
         "expect_answer": False,
         "note": "NEGATÍV TESZT — árazás nincs a tudásbázisban, az agentnek kimondja",
