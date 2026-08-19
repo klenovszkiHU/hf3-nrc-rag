@@ -17,3 +17,5 @@ data/chunks/
 .idea/
 .DS_Store
 src/.DS_Store
+!data/raw/manual/
+!data/raw/manual/**

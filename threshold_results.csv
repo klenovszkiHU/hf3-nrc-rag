@@ -1,0 +1,121 @@
+kategoria,kerdes,top_rerank_score,top_forras,valasz_eleje
+A / Erős pozitív,Mikor indul a következő omnibusz?,0.18417984,Étkezés infografika,"A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A megadott forrásokban szerepel ugyan az „Omnibusz felmérés indulási időpontok & kérdésáraink"" szekció, azonban a konkrét indulási "
+A / Erős pozitív,Mennyibe kerül egy egyválaszos kérdés az omnibuszban?,0.9998727,Nrcdata Omnibusz Kutatas,"Egy egyválaszos kérdés (1–15 sor) az NRC Data omnibuszban:
+
+- **80 000 Ft** (nettó) — adatátadás csomagban
+- **110 000 Ft** (nettó) — elemzéssel
+
+[Forrás: Nrcdata Omnibusz Kutatas]
+
+> **Megjegyzés:** "
+A / Erős pozitív,Hány fős az omnibusz mintája és kikre reprezentatív?,0.9981178,Z-Zone Omnibusz,"## Omnibusz mintaméret és reprezentativitás
+
+Az omnibusz felmérések mintája **1000 fős**, és országosan reprezentatív az alábbi szempontok szerint:
+
+- **nem**
+- **életkori csoportok**
+- **iskolázottsá"
+A / Erős pozitív,"Mennyi idő alatt kapom meg az adatokat, ha ma leadom a kérdést?",0.170508,Az online adatfelvétel 7 lépése,"## Adatátadási átfutási idő – QuickBasic Data
+
+Ha ma adja le kérdéseit, a folyamat a következőképpen alakul:
+
+| Lépés | Határidő |
+|---|---|
+| Ajánlat | 24 órán belül |
+| Adatfelvétel (a kérdőív végle"
+A / Erős pozitív,Mi a különbség az adatátadás és az elemzéssel csomag között?,0.99999964,Nrcdata Omnibusz Kutatas,"## Adatátadás vs. elemzéssel csomag – a két szolgáltatás különbsége
+
+Az NRC kétféle teljesítési formát kínál az omnibusz és egyéb kutatási megbízásokhoz:
+
+**Adatátadás**
+A megbízó a saját kérdéseire v"
+A / Erős pozitív,Mikor van a kérdőív leadási határideje?,0.0946777,Nrcdata Honlap Strategia,"A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A forrásokban szerepel, hogy az NRC Databus havonta háromszor indul, és a kérdőív leadását követően a **4. munkanapon** kerül átadá"
+A / Erős pozitív,"Milyen kedvezmény jár, ha tíz kérdést teszek fel?",0.015603535,Nrcdata Omnibusz Kutatas,"Az NRC omnibusz fix, kérdéstípus-alapú árazással működik. A kedvezményrendszer a következő:
+
+- **6 kérdéstől** 10% mennyiségi kedvezmény jár
+- **11 kérdéstől** 20% mennyiségi kedvezmény jár
+
+Ebből köv"
+A / Erős pozitív,"Hogyan ellenőrzitek, hogy valódi válaszadók töltik ki a kérdőívet?",0.9920002,Adatminőség az online adatfelvételeknél (1.),"## Az NRC válaszadói hitelességének ellenőrzési rendszere
+
+Az NRC adatminőség-biztosítása nem egyetlen szűrőponton, hanem egy **többlépcsős, folyamatos ellenőrzési rendszeren** alapul.
+
+---
+
+### 1. Re"
+B / Gyenge pozitív,"Márkaismertséget szeretnék mérni, jó erre az omnibusz?",0.20609398,"Tudd meg, amit szeretnél a Z-generációról!","## Omnibusz kutatás márkaismertség-mérésre – alkalmazhatóság
+
+**Rövid válasz: igen, alkalmas – bizonyos feltételek mellett.**
+
+---
+
+### Mikor megfelelő az omnibusz erre a célra?
+
+Az omnibusz kutatás k"
+B / Gyenge pozitív,"Öt kérdésem lenne, ebből kettő nyitott — nagyjából mennyi lesz?",0.109134786,Nrcdata Omnibusz Kutatas,"## Tájékoztató árbecslés – 5 kérdéses omnibusz csomag
+
+A megadott kérdésstruktúra alapján (3 zárt + 2 nyitott kérdés) az alábbi tájékoztató árral kalkulálhat:
+
+---
+
+### Adatátadás csomag
+
+| Kérdéstípu"
+B / Gyenge pozitív,"Van olyan kutatásunk, ahol 300 fős célcsoportot kell elérni. Az omnibusz jó erre?",0.9952448,Nrcdata Quickbasic Data,"## Omnibusz vagy más megoldás 300 fős célcsoporthoz?
+
+Az omnibusz **nem az ideális megoldás** erre az igényre — az NRC saját terméktájékoztatója is más irányt javasol.
+
+**Miért nem az omnibusz?**
+Az o"
+B / Gyenge pozitív,Kampány előtt és után is mérnék. Hogyan érdemes ezt időzíteni?,0.06267437,Nrcdata Omnibusz Kutatas,"## Kampány előtt és utáni mérés időzítése
+
+A kampányhatás megbízható kimutatásához az előmérés és az utómérés között módszertanilag egyértelmű elválasztásra van szükség. Az NRC eszközkészlete ezt két "
+B / Gyenge pozitív,"Mobilon is kitöltik a kérdőívet, vagy csak asztali gépen?",0.9990746,"15 tipp, amivel javíthatod az online kutatásod minőségét","## Mobilos kitöltés az online kutatásokban
+
+A rendelkezésre álló adatok egyértelműen mutatják, hogy a válaszadók jelentős hányada **nem asztali gépen tölti ki a kérdőíveket**.
+
+Az NRC Netpanel mérései"
+B / Gyenge pozitív,Nemzetközi adatfelvételre is van lehetőség?,0.93183565,Nrcdata Nagymintas Adatfelvetel,"## Nemzetközi adatfelvétel az NRC Data-val
+
+Igen, az NRC Data nemzetközi, többországos adatfelvételt is vállal.
+
+**Földrajzi lefedettség**
+Partnerpaneljeink révén **30+ országban** szervezünk reprezen"
+C / Negatív,Hány éve alapították az NRC-t és ki a tulajdonos?,0.062103126,Impresszum,"A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A forrásokban az NRC alapításának éve és tulajdonosi szerkezete nem szerepel. A cég képviselőjeként Klenovszki János neve megjeleni"
+C / Negatív,Milyen szoftverrel készítitek a súlyozást?,0.22988081,Nrcdata Nagymintas Adatfelvetel,"A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A forrásokban az szerepel, hogy az NRC Data **SPSS és Excel formátumban** adja át a súlyozott adatbázist, súlyozási mátrixszal és d"
+C / Negatív,Mekkora az NRC éves árbevétele?,0.124319285,Nrcdata Modszertan Tudasbazis,"A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A megadott forrásokban az NRC árbevételére vonatkozó adat nem szerepel. Ha pontos pénzügyi adatra van szükség, javasolt a cég hivat"
+C / Negatív,Milyen fizetési határidővel dolgoztok?,0.0015548134,Nrcdata Nagymintas Adatfelvetel,"A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A fizetési feltételekről és határidőkről pontosabb tájékoztatást kollégáink tudnak adni az ajánlatkérés során. Kérdésével forduljon"
+C / Negatív,Ki a mi account managerünk?,0.04426588,Adatvédelmi irányelvek,"A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A forrásokban nem szerepel, hogy egy adott ügyfélhez melyik account manager van rendelve. Ezzel kapcsolatban közvetlenül az NRC-t é"
+C / Negatív,Melyik versenytársatoknál olcsóbb az omnibusz?,0.5277577,Nrcdata Omnibusz Kutatas,"A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A forrásokban kizárólag annyi szerepel, hogy a telefonos omnibuszokat kínáló versenytársak (Publicus, Forecast) havonta egyszer ind"
+D / Szabály alapú eszkaláció,"Ez féléves trackingként kellene, három országban. Mennyi kedvezményt tudtok adni?",0.0007793661,Nrcdata Quickbasic Data,"**Ajánlatszöveg-részlet – Féléves, háromországos tracking**
+
+---
+
+Köszönjük az érdeklődést. Az alábbiakban összefoglaljuk, amit a rendelkezésre álló információk alapján egyértelműen meg tudunk válaszo"
+D / Szabály alapú eszkaláció,"Ha éves keretszerződést kötünk, mennyivel megyünk lejjebb az árlistából?",0.00040133507,Nrcdata Kerdoivprogramozas,"## Éves keretszerződéses kedvezmény
+
+A rendelkezésre álló tudásbázisban nincs elegendő információ erről.
+
+A forrásokban szereplő árlista (omnibusz kérdéstípusonként, illetve kérdőívprogramozási csomag"
+D / Szabály alapú eszkaláció,"Tudtok garantálni, hogy pénteken már nálam lesz az adat?",0.008030813,Ellenőrzőlista az optimális online kvalitatív módszer megválasztásához,"## Adatátadási határidőről — amit érdemes előre tisztázni
+
+Az adatfelvétel zárónapjától az elemzésre kész adatbázis átadásáig több tényező együttesen határozza meg a tényleges határidőt, ezért konkrét"
+D / Szabály alapú eszkaláció,Aláírnátok egy titoktartási szerződést a kérdéseinkre?,0.23423143,Az online adatfelvétel 7 lépése,"## Titoktartás és adatvédelem
+
+Az NRC adatkezelési gyakorlata részletesen szabályozott, és minden kutatás **célhoz kötött adatkezeléssel** zajlik – nincs újrahasznosított adat, nincs paneladatok érték"

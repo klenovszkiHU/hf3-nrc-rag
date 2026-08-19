@@ -15,10 +15,19 @@ from src.config import ANTHROPIC_API_KEY, HYDE_MODEL
 
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-HYDE_SYSTEM = """Te egy tapasztalt piackutatási szakértő vagy az NRC-nél.
+HYDE_SYSTEM = """Te egy tapasztalt piackutatási szakértő vagy az NRC-nél,
+egy magyar online piackutató cégnél.
+
+Fogalmi kontextus, amit mindig alkalmazz:
+- "omnibusz" = többmegbízós kvantitatív online kutatás, NRC-termék. Soha nem közlekedési eszköz.
+- "hullám" = egy omnibusz adatfelvételi ciklus
+- "panel" / "NetPanel" = az NRC online válaszadói közössége
+- "súlyozás", "reprezentativitás", "kereszttábla" = piackutatási szakkifejezések
+- "tracking" = ismételt mérés ugyanazon a kérdéskészleten
+
 A felhasználó kérdésére írj egy rövid (2-4 mondatos) szakmai választ,
-mintha az egy módszertani leírásból vagy ajánlatból lennék kivéve.
-Magyar nyelven válaszolj. Ne kérdezz vissza, csak írj."""
+mintha az egy NRC módszertani leírásból, termékleírásból vagy ajánlatból
+lenne kivéve. Magyar nyelven válaszolj. Ne kérdezz vissza, csak írj."""
 
 
 def generate_hypothesis(question: str) -> str:

@@ -1109,3 +1109,43 @@ Ez a dokumentum az AI Insights minta szerint készült termékbemutató oldal. U
  
 
 **Társfájlok: **nrcdata-cikk-sablon.md — a hosszú formátumú inspirációs cikk receptje. nrcdata-lead-magnet-sablon.md — a letölthető PDF receptje. omnibusz_mintacikk.docx — az első, részletes mintacikk hivatkozási alapként.
+
+# Kiegészítés — NRC Omnibusz ügyfélprezentáció, 2026
+
+## Omnibusz teljes árlista kérdéstípusonként
+
+A listaárak kérdésenként értendők, nettó árak, két csomagban: adatátadás, illetve elemzéssel.
+
+Egyválaszos kérdés (1–15 sor): 80 000 Ft / 110 000 Ft.
+
+Többválaszos kérdés (1–15 sor): 80 000 Ft / 110 000 Ft.
+
+Skálás, rangsoros vagy csúszkás kérdés (1–15 sor): 90 000 Ft / 120 000 Ft.
+
+Táblázatos kérdés (max. 5 oszlop, 1–9 sor): 100 000 Ft / 130 000 Ft.
+
+Nyitott kérdés kódolás nélkül: 120 000 Ft / 150 000 Ft.
+
+Nyitott kérdés kódolással: 160 000 Ft / 190 000 Ft.
+
+Plusz sor a kérdéshez: 10 000 Ft / 15 000 Ft.
+
+## Adatátadás és elemzéssel csomag különbsége
+
+Adatátadás: a megbízó a saját kérdéseire vonatkozó ellenőrzött, súlyozott adatokat kapja meg feldolgozásra alkalmas formában. Elemzéssel: az adatátadás mellé az NRC kutatói elemzést és értelmezést is készítenek, kereszttáblás bontásokkal.
+
+## NetPanel válaszadói közösség
+
+A NetPanel az NRC saját online válaszadói közössége. A 120 000 fős közösség 79%-a aktív kérdőívkitöltő, a passzív tagokat töröljük a panelből; 2025-ben az aktív paneltagok száma 95 726 fő volt. 2025-ben 528 531 kitöltött kérdőív készült, a kérdőívet befejezők aránya 75% volt. Az újonnan regisztrált válaszadók 65–70%-a válik aktív kitöltővé; 2025-ben 20 105 új paneltag regisztrált.
+
+## Adatminőség-ellenőrzés a regisztrációnál és kitöltés közben
+
+Regisztrációkor e-mail-cím ellenőrzés, egyedi felhasználói azonosító hozzárendelése, és 2025-től kettős azonosítós regisztráció történik. Kitöltés közben többszörös részvétel megakadályozása, figyelemellenőrző kérdések, logikai konzisztencia-ellenőrzés, időbélyegzés, többszörös válaszadás kiszűrése és valós idejű válaszfigyelés fut.
+
+## Adatminőség-ellenőrzés a feldolgozásnál
+
+Feldolgozáskor a kitöltési idő elemzése és a nyitott kérdések válaszainak ellenőrzése történik. A nyereményjáték oldalán szankcionálás jár hibás válaszok vagy többszörös regisztráció esetén, emellett konzisztencia-ellenőrzés, kétfaktoros azonosítás és telefonszám-validálás működik.
+
+## Kitöltési környezet és mobilhasználat
+
+A kisképernyős kérdőívkitöltés aránya 2020 óta folyamatosan nő, 2025-re 60% fölé emelkedett, ezért az NRC kisképernyőre optimalizált kérdőíveket küld. A válaszadók 78%-a világos, 22%-a sötét képernyőbeállítást használ. Forrás: NRC CX Research, 2023. szeptember, N=1500 fő, a 16–75 éves lakosságra öt szempont szerint reprezentatív kutatás.

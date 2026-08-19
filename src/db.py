@@ -42,6 +42,44 @@ class Chunk(Base):
     embedding = Column(Vector(EMBEDDING_DIM))
 
 
+class RunLog(Base):
+    """
+    Egy sor = egy ügyfél-kérdés végigfutása az ügyfél-belépőponton (client_demo.py).
+
+    A napló CSAK maszkolt kérdésszöveget tárol (lásd src/client/pii.py) —
+    a PII-szűrés a pipeline hívása ELŐTT fut, tehát ide sosem kerül nyers
+    személyes adat.
+    """
+    __tablename__ = "run_log"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+    session_id = Column(String(100))
+
+    # Kérdés és válasz (a kérdés mindig PII-maszkolt)
+    question_masked = Column(Text, nullable=False)
+    answer_text = Column(Text)
+
+    # Pipeline-metrikák a debug_info-ból
+    top_rerank_score = Column(Float)
+    top_source = Column(String(500))
+    latency_ms = Column(Integer)
+    cost_usd = Column(Float)
+
+    # Eszkalációs döntés
+    outcome = Column(String(20))            # "answered" | "escalated"
+    escalation_reason = Column(String(200))  # pl. "low_score" | "pricing_keyword"
+
+    # Emberi jóváhagyás (approve_demo.py tölti ki)
+    # pending|approved|edited|rejected — NULL, ha nem volt generált válasz
+    # (eszkalált eset). Nincs oszlop-szintű default: a SQLAlchemy default
+    # explicit None esetén is lefutna, és felülírná az eszkalált sorokat.
+    approval_status = Column(String(20))
+    approver = Column(String(100))
+    approved_at = Column(DateTime)
+    edit_distance = Column(Integer)
+
+
 def init_db():
     """Létrehozza a pgvector extension-t és a táblát, ha még nem léteznek."""
     with engine.connect() as conn:
